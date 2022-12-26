@@ -1,22 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Seweryn Skrzypik</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/desktop.css">
+
+	<link rel="stylesheet" type="text/css" href="css/card.css">
 	<link rel="icon" type="image/png" href="img/logo.png">
 
 </head>
 <body>
 
-	<button id="back-to-top" class="btn btn-danger btn-floating btn-lg position-fixed me-5 mb-5 d-none">
+	<button id="back-to-top" class="btn btn-danger btn-floating btn-lg position-fixed bottom-0 end-0 d-none desktop-me-5 desktop-mb-5 mobile-me-4 mobile-mb-4">
 		<i class="fas fa-arrow-up"></i>
 	</button>
 
 	<header>
-		<nav class="navbar navbar-dark navbar-expand-lg">
+		<nav class="navbar navbar-dark navbar-expand-lg position-absolute w-100">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					<img src="img/logo.png" width="30" height="24">
@@ -38,6 +43,7 @@
 								Kontakt
 							</a>
 						</li>
+
 						<li class="nav-item">
 							<button class="nav-link btn btn-danger text-light" onClick="window.open('https://github.com/Sewer-47/', '_blank');">
 								Github
@@ -62,7 +68,7 @@
 					<img src="img/calculator.png" class="d-block w-100 img-fluid">
 					<div class="carousel-caption d-md-block">
 						<p class="h1 fw-bold">Kalkulator graficzny</p>
-						<p class="h3">Proste narzędzie do rysowania funkcji matematycznych z dodatkami do edycji graficznej</p>
+						<p class="h3">Proste narzędzie do rysowania funkcji matematycznych z dodatkami do edycji graficznej.</p>
 						<br><br>
 						<a href="https://sewer-47.github.io/kalkulator-graficzny/" target="_blank" class="btn btn-danger btn-lg">Zobacz demo!</a>
 
@@ -72,7 +78,7 @@
 					<img src="img/calendar.jpg" class="d-block w-100">
 					<div class="carousel-caption d-md-block">
 						<p class="h1 fw-bold">Kalendarz</p>
-						<p class="h3">Prosty kalendarz stworzony przy użyciu js i bootstrapa</p>
+						<p class="h3">Prosty kalendarz stworzony przy użyciu js i bootstrapa.</p>
 						<br><br>
 						<a href="https://github.com/Sewer-47/calendar" target="_blank" class="btn btn-danger btn-lg">Zobacz projekt!</a>
 					</div>
@@ -117,8 +123,8 @@
 		</div>
 	</header>
 
-	<main style="position: relative; z-index: 1; top: -20px;">
-		<div id="main-div" class="bg-light text-light rounded-top mx-auto">
+	<main class="position-relative" style="z-index: 1; top: -20px;">
+		<div class="bg-light text-light rounded-top desktop-w-98 mx-auto">
 			<br>
 			<h1 class="text-dark text-center">Technologie jakich używam:</h1>
 			<br><br><br>
@@ -174,82 +180,83 @@
 		</div>		
 
 
-		<div class="bg-light text-dark rounded-top mx-auto" style="width: 98%;">
-			<div id="frontend" class="text-light">
-				<img class="float-end mt-4 me-4" src="img/hand-coding-pana.png">
-				<br><br><br><br>
-				<h1 class="ps-5">Programista front-end</h1>
-				<br>
-				<h5 class="ps-5">
-					Jeżeli chodzi o programowanie front-endowe to dopiero zaczynam swoją przygodę, jednak wydaje mi się, że radzę sobie dobrze. Co widać po tej stronie i kilku innych moich projektach.
-				</h5>
-				<br><br><br><br><br><br>
+		<div class="bg-light text-dark rounded-top desktop-w-98 mx-auto">
+
+			<div id="frontend" class="text-light desktop-flex">
+				<div class="flex-row ms-5 desktop-mt-5 mobile-pt-5">
+					<h1>Programista front-end</h1>
+					
+					<h5>
+						Jeżeli chodzi o programowanie front-endowe to dopiero zaczynam swoją przygodę. Jednak wydaje mi się, że radzę sobie dobrze. Co widać po tej stronie i kilku innych moich projektach.
+					</h5>					
+				</div>
+				<img class="me-5 top-62px position-relative" src="img/hand-coding-pana.png">	
 			</div>
+
+
 			<br><br><br><br>
 			<div id="about-me" class="container py-4">
 				<div class="row d-flex justify-content-center">
-					<div id="about-me-desc" class="col-3 rounded bg-light">
+					<div id="about-me-desc" class="col-3 mobile-w-100 rounded bg-light mobile-text-center">
 						<h1>O mnie:</h1>
-						<h5>Jestem 19 letnim, pracowitym i nastawionym na rozwój chłopakiem. Moją pasja jest programowanie, zajmuje się tym od 14 roku życia. Oprócz programowania interesuje się elektroniką, gdzie pierwsze obwody tworzyłem mając 11 lat. Jeżeli chodzi o prace jako programista, to prócz kilku małych zleceń nie miałem w tym doświadczenia.</h5>
+						<h5>Jestem 19 letnim, pracowitym i nastawionym na rozwój chłopakiem. Moją pasja jest programowanie. Zajmuje się tym od 14 roku życia. Oprócz programowania interesuje się elektroniką, gdzie pierwsze obwody tworzyłem mając 11 lat. Jeżeli chodzi o prace jako programista, to prócz kilku małych zleceń nie miałem w tym doświadczenia.</h5>
 					</div>
-
-					<div class="col-3">
-						<img id="about-me-picture" class="rounded" src="img/me.jpg">
+					<div class="col-3 mobile-w-100">
+						<img class="rounded desktop-rotate mobile-w-100 mobile-h-100" src="img/me.jpg">
 					</div>
 				</div>
 				<br><br>
 			</div>
 			<br>
-			<div id="backend" class="text-light">
-				<img class="float-end mt-5" src="img/hand-coding.png">
-				
-				<br><br><br><br><br>
-				<h1 class="ps-5">Programista back-end</h1>
-				<h5 class="ps-5">
-					Programowaniem back-endowym zajmuje się już dosyć długi czas. Pierwsze swoje kroki stawiałem pisząc wtyczki do serwerów minecrafta w javie, po jakims czasie stworzyłem własną implementacje silnika serwera, po którego stronie leży cała logika gry. 
-					Również tworzyłem oprogramowanie do odtwarzacza muzyki w C++ zbudowanym na mikrokontrolerze esp32.
-				</h5>
-				<br><br><br><br><br>
+
+			<div id="backend" class="text-light desktop-flex">
+				<div class="flex-row ms-5 mt-5 mobile-pt-5">
+					<h1 class="">Programista back-end</h1>
+					<h5 class="">
+						Programowaniem back-endowym zajmuje się już dosyć długi czas. Pierwsze swoje kroki stawiałem pisząc wtyczki do serwerów minecrafta w javie, po jakims czasie stworzyłem własną implementacje silnika serwera, po którego stronie leży cała logika gry. 
+						Również tworzyłem oprogramowanie do odtwarzacza muzyki w C++ zbudowanym na mikrokontrolerze esp32.
+					</h5>
+				</div>
+				<img class="top-62px position-relative" src="img/hand-coding.png">
 			</div>
 			<br><br>
 		</div>
 	</main>
 
-	<footer class="mx-auto" style="position: relative; top: -20px; width: 98%;">
+	<footer class="mx-auto desktop-w-98 position-relative" style="top: -20px;">
 		<div id="footer-container" class="container float-start text-start pt-5">
 			<div class="row">
-				<div class="col col-footer">
+				<div class="col mobile-text-center mobile-w-100">
 					<p class="text-light fw-bold">NA KONIEC</p>
 
 					<p class="text-gray">
 						Na ten moment nie uważam siebie za doświadczonego programistę.
 						Jednak myślę, że nasza współpraca może być owocna. Jestem rzetelny 
-						i pracowity, również nie lubię owijania w bawełnę, wieć każdy projekt,
+						i pracowity, również nie lubię owijania w bawełnę, wiec każdy projekt,
 						którego się podejmę będę tworzył dając z siebie 100%, a jeśli uznam, że nie jestem
 						w stanie czegoś stworzyć powiem to na wstępie, aby uszanować nasz wspólny czas.
 					</p>
 				</div>
 
-				<div class="col col-footer text-gray">
+				<div class="col mobile-w-100 mobile-text-center text-gray">
 					<p class="text-light fw-bold">ŹRÓDŁA</p>
 
-    				<a class="text-gray" href="https://codepen.io/jayadul/pen/WKqGaE">Animowane karty</a>
-    				<br>
-    				<a class="text-gray" href="https://pl.freepik.com/darmowe-zdjecie/piekny-budynek-i-architektura-w-yokohama-miasta-linii-horyzontu_3717823.htm#query=night%20city&position=43&from_view=search&track=sph">Obraz autorstwa lifeforstock</a>	
-    				<br>			
-    				<a class="text-gray" href="https://storyset.com/work">Work illustrations by Storyset</a>
-    				<br>
+					<a class="text-gray" href="https://codepen.io/jayadul/pen/WKqGaE">Animowane karty</a>
+					<br>
+					<a class="text-gray" href="https://pl.freepik.com/darmowe-zdjecie/piekny-budynek-i-architektura-w-yokohama-miasta-linii-horyzontu_3717823.htm#query=night%20city&position=43&from_view=search&track=sph">Obraz autorstwa lifeforstock</a>	
+					<br>			
+					<a class="text-gray" href="https://storyset.com/work">Work illustrations by Storyset</a>
+					<br>
 
-    				<a class="text-gray" href="https://storyset.com/people">People illustrations by Storyset</a>
-    				<br>
-    				<a class="text-gray" href="https://pl.freepik.com/darmowe-wektory/kolekcja-nowoczesnej-kolekcji-akwarela-social-media_1843262.htm#query=instagram&position=14&from_view=search&track=sph">Obraz autorstwa BiZkettE1</a> na Freepik
-    				<br>
-    				<a class="text-gray" href="https://pl.freepik.com/darmowe-zdjecie/projektowanie-stron-internetowych-koncepcja-oprogramowania-responsywnego_17123714.htm#query=web%20design&position=14&from_view=keyword">Obraz autorstwa rawpixel.com</a> na Freepik
-    				<br>
-    				<a class="text-gray" href="https://www.freepik.es/foto-gratis/equipo-programadores-hablando-sobre-algoritmo-que-ejecuta-pantalla-portatil-apuntando-al-codigo-fuente-mientras-sentado-escritorio-desarrolladores-software-que-colaboran-proyecto-grupo-codificacion-datos_22453779.htm#query=algoritmo&position=16&from_view=keyword">Imagen de DCStudio</a> en Freepik
+					<a class="text-gray" href="https://storyset.com/people">People illustrations by Storyset</a>
+					<br>
+					<a class="text-gray" href="https://pl.freepik.com/darmowe-wektory/kolekcja-nowoczesnej-kolekcji-akwarela-social-media_1843262.htm#query=instagram&position=14&from_view=search&track=sph">Obraz autorstwa BiZkettE1</a> na Freepik
+					<br>
+					<a class="text-gray" href="https://pl.freepik.com/darmowe-zdjecie/projektowanie-stron-internetowych-koncepcja-oprogramowania-responsywnego_17123714.htm#query=web%20design&position=14&from_view=keyword">Obraz autorstwa rawpixel.com</a> na Freepik
+					<br>
+					<a class="text-gray" href="https://www.freepik.es/foto-gratis/equipo-programadores-hablando-sobre-algoritmo-que-ejecuta-pantalla-portatil-apuntando-al-codigo-fuente-mientras-sentado-escritorio-desarrolladores-software-que-colaboran-proyecto-grupo-codificacion-datos_22453779.htm#query=algoritmo&position=16&from_view=keyword">Imagen de DCStudio</a> en Freepik
 				</div>
-
-				<div class="col col-footer">
+				<div class="col mobile-mt-3 mobile-w-100 mobile-text-center">
 					<p class="text-light fw-bold">KONTAKT</p>
 					<p class="text-gray"><i class="fa-solid fa-envelope"></i> seweryn.skrzypik@gmail.com</p>
 					<p class="text-gray"><i class="fa-brands fa-discord"></i> Seweryn#0593</p>
@@ -258,23 +265,23 @@
 			</div>
 		</div>
 
-		<div id="footer-social" class="float-end pt-5">
-			<p class="text-light fw-bold ps-5">SOCIAL MEDIA</p>
+		<div class="float-end desktop-mt-5 desktop-pe-10 mobile-mt-3 mobile-w-100 mobile-text-center">
+			<p class="text-light fw-bold desktop-ms-5">SOCIAL MEDIA</p>
 			<div class="row pt-3">
-				<div class="col">
+				<div class="col mobile-w-50">
 					<a href="https://www.instagram.com/skrzpk_/">
-						<img class="float-start pe-5" src="img/instagram.png">
+						<img class="desktop-me-5" src="img/instagram.png">
 					</a>
 				</div>
-				<div class="col">
+				<div class="col mobile-w-50">
 					<a href="https://www.facebook.com/skszypik/">
-						<img class="float-end me-5" src="img/facebook.png">
+						<img class="desktop-me-5" src="img/facebook.png">
 					</a>
 				</div>
 			</div>
 		</div>
 
-		<div class="footer-space"></div>
+		<div class="desktop-pt-230px mobile-pt-840px"></div>
 		<hr class="border-light mt-5">
 
 

@@ -1,0 +1,59 @@
+@media (min-width:1281px) {
+
+	#about-me-desc {
+		height: 31rem;
+		width: 37rem;
+		margin-right: -3rem;
+		margin-top: 3rem;
+		z-index: 1;
+	}
+
+	#footer-container {
+		margin-left: 5rem;
+	}
+
+	#frontend img, #backend img {
+		width: 26rem;
+		height: 24rem;
+	}
+
+	.desktop-rotate {
+		transform: rotate(0.008turn);
+	}
+
+	.desktop-w-98 {
+		width: 98%;
+	}
+
+	.desktop-hidden {
+		display: none;
+	}
+
+	.desktop-flex {
+		display: flex;
+	}
+
+	.desktop-pt-230px {
+		padding-top: 230px;
+	}
+
+	.desktop-pe-10 {
+		padding-right: 6rem;
+	}
+
+	.desktop-me-5 {
+		margin-right: 3rem;
+	}
+
+	.desktop-mb-5 {
+		margin-bottom: 3rem;
+	}	
+
+	.desktop-ms-5 {
+		margin-left: 3rem;
+	}
+
+	.desktop-mt-5 {
+		margin-top: 3rem;
+	}
+}
