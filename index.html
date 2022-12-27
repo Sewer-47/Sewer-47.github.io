@@ -12,10 +12,8 @@
 
 	<link rel="stylesheet" type="text/css" href="css/card.css">
 	<link rel="icon" type="image/png" href="img/logo.png">
-
 </head>
 <body>
-
 	<button id="back-to-top" class="btn btn-danger btn-floating btn-lg position-fixed bottom-0 end-0 d-none desktop-me-5 desktop-mb-5 mobile-me-4 mobile-mb-4">
 		<i class="fas fa-arrow-up"></i>
 	</button>
@@ -39,13 +37,19 @@
 							<a class="nav-link me-2 text-underline-hover text-light" aria-current="page" href="#">Blog</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link me-2 text-underline-hover text-light" onclick="window.scrollTo(0, document.body.scrollHeight);">
+							<a class="nav-link me-2 text-underline-hover text-light" onclick="window.scrollTo(0, document.body.scrollHeight);" i18n="contact">
 								Kontakt
 							</a>
 						</li>
 
 						<li class="nav-item">
-							<button class="nav-link btn btn-danger text-light" onClick="window.open('https://github.com/Sewer-47/', '_blank');">
+							<button id="lang-button" class="nav-link me-2 btn btn-danger text-light" onclick="window.switchNextLocale();">
+								English <i class="fa-solid fa-earth-americas"></i>
+							</button>							
+						</li>
+
+						<li class="nav-item">
+							<button class="nav-link mobile-mt-3 btn btn-danger text-light" onClick="window.open('https://github.com/Sewer-47/', '_blank');">
 								Github
 								<i class="fa-brands fa-github"></i>	
 							</button>
@@ -67,46 +71,46 @@
 				<div class="carousel-item active">
 					<img src="img/calculator.png" class="d-block w-100 img-fluid">
 					<div class="carousel-caption d-md-block">
-						<p class="h1 fw-bold">Kalkulator graficzny</p>
-						<p class="h3">Proste narzędzie do rysowania funkcji matematycznych z dodatkami do edycji graficznej.</p>
+						<p class="h1 fw-bold" i18n="graphicsCalculator">Kalkulator graficzny</p>
+						<p class="h3" i18n="graphicsCalculatorDesc">Proste narzędzie do rysowania funkcji matematycznych z dodatkami do edycji graficznej.</p>
 						<br><br>
-						<a href="https://sewer-47.github.io/kalkulator-graficzny/" target="_blank" class="btn btn-danger btn-lg">Zobacz demo!</a>
+						<a href="https://sewer-47.github.io/kalkulator-graficzny/" target="_blank" class="btn btn-danger btn-lg" i18n="graphicsCalculatorDemo">Zobacz demo!</a>
 
 					</div>
 				</div>
 				<div class="carousel-item">
 					<img src="img/calendar.jpg" class="d-block w-100">
 					<div class="carousel-caption d-md-block">
-						<p class="h1 fw-bold">Kalendarz</p>
-						<p class="h3">Prosty kalendarz stworzony przy użyciu js i bootstrapa.</p>
+						<p class="h1 fw-bold" i18n="calendar">Kalendarz</p>
+						<p class="h3" i18n="calendarDesc">Prosty kalendarz stworzony przy użyciu js i bootstrapa.</p>
 						<br><br>
-						<a href="https://github.com/Sewer-47/calendar" target="_blank" class="btn btn-danger btn-lg">Zobacz projekt!</a>
+						<a href="https://github.com/Sewer-47/calendar" target="_blank" class="btn btn-danger btn-lg" i18n="calendarDemo">Zobacz projekt!</a>
 					</div>
 				</div>
 
 				<div class="carousel-item">
 					<img src="img/auth.jpg" class="d-block w-100">
 					<div class="carousel-caption d-md-block">
-						<p class="h1 fw-bold">System autoryzacji</p>
-						<p class="h3">
+						<p class="h1 fw-bold" i18n="authSystem">System autoryzacji</p>
+						<p class="h3" i18n="authSystemDesc">
 							Wtyczka dodająca logowanie na serwery minecraft. Napisana w javie w oparciu o api bukkita. Aplikacja w pełni konfigurowalna, ze wsparciem dla internacjonalizacji. Oparta o moduły, które można włączać/wyłączac w czasie rzeczywistym.
 						</p>
 						<br><br>
-						<a href="https://github.com/Sewer-47/SimpleAuth" target="_blank" class="btn btn-danger btn-lg">Zobacz projekt!</a>
+						<a href="https://github.com/Sewer-47/SimpleAuth" target="_blank" class="btn btn-danger btn-lg" i18n="authDemo">Zobacz projekt!</a>
 					</div>
 				</div>
 
 				<div class="carousel-item">
 					<img src="img/audio-player.jpg" class="d-block w-100">
 					<div class="carousel-caption d-md-block">
-						<p class="h1 fw-bold">Cyfrowy odtwarzacz muzyki</p>
-						<p class="h3">
+						<p class="h1 fw-bold" i18n="audioPlayer">Cyfrowy odtwarzacz muzyki</p>
+						<p class="h3" i18n="audioPlayerDesc">
 							odtwarzacz audio z ekranem lcd zbudowany na mikrokontrolerze esp32 z procesorem dźwiękowym tda8425 i końcówką mocy tda7377. Oparty o oprogramowanie napisane w C++.
 						</p>
 						<br><br>
-						<a href="img/prezentacja1.mp4" target="_blank" class="btn btn-danger btn-lg">Prezentacja 1</a>
+						<a href="img/prezentacja1.mp4" target="_blank" class="btn btn-danger btn-lg" i18n="audioPlayerDemo1">Prezentacja 1</a>
 						<br class="desktop-hidden">
-						<a href="img/prezentacja2.mp4" target="_blank" class="btn btn-danger btn-lg">Prezentacja 2</a>						
+						<a href="img/prezentacja2.mp4" target="_blank" class="btn btn-danger btn-lg" i18n="audioPlayerDemo2">Prezentacja 2</a>						
 					</div>
 				</div>
 			</div>
@@ -126,15 +130,15 @@
 	<main class="position-relative" style="z-index: 1; top: -20px;">
 		<div class="bg-light text-light rounded-top desktop-w-98 mx-auto">
 			<br>
-			<h1 class="text-dark text-center">Technologie jakich używam:</h1>
+			<h1 class="text-dark text-center" i18n="knownTechnologies">Technologie jakich używam:</h1>
 			<br><br><br>
 			<div class="row">
 				<div class="col">
 					<div class="service-card">
 						<div class="card">
 							<i class="fa-brands fa-java"></i>
-							<h3>Java</h3>
-							<h5>5 Letnie hobbistyczne doświadcznenie na poziomie junior/mid developer. Głównie zajmowałem się tworzeniem serwerów do gry Minecraft, w tym własnej implementacji silnika serwera. Aktualnie nie ma rzeczy, której w tym języku nie stworze, oczywiście lepiej, lub gorzej.</h5>
+							<h3 i18n="java">Java</h3>
+							<h5 i18n="javaDesc">Język od którego zacząłem pasję do programowania. 5 Letnie hobbistyczne doświadcznenie na poziomie junior/mid developer. Głównie zajmowałem się tworzeniem serwerów do gry Minecraft, w tym własnej implementacji silnika serwera.</h5>
 						</div>
 					</div>
 				</div>
@@ -143,8 +147,8 @@
 					<div class="service-card">
 						<div class="card">
 							<i class="fa-brands fa-square-js"></i>
-							<h3>JavaScript</h3>
-							<h5>
+							<h3 i18n="js">JavaScript</h3>
+							<h5 i18n="jsDesc">
 								Roczne doświadczenie, sprawnie posługuję się tym językiem. Aplikacje, jakie tworzyłem w tym języku to m.in. kalkulator graficzny i aplikacja do sterowania mikrokontrolerem przy użyciu strony internetowej.
 							</h5>
 							<br>
@@ -155,8 +159,8 @@
 					<div class="service-card">
 						<div class="card">
 							<i class="fa-brands fa-bootstrap"></i>
-							<h3>Bootstrap</h3>
-							<h5>
+							<h3 i18n="bootstrap">Bootstrap</h3>
+							<h5 i18n="bootstrapDesc">
 								Biblioteka, którą poznałem stosunkowo niedawno, aczkolwiek wykonałem przy użyciu niej wiele projektów, w tym tą stronę. Mimo krótkiego stażu ok. 2 miesiące radze sobię bardzo sprawnie.
 							</h5>
 							<br>
@@ -168,8 +172,8 @@
 					<div class="service-card">
 						<div class="card">
 							<i class="fa-brands fa-php"></i>
-							<h3>PHP</h3>
-							<h5>
+							<h3 i18n="php">PHP</h3>
+							<h5 i18n="phpDesc">
 								Język, który poznałem ucząc się do egzaminów zawodowych. Mimo małego doswiadczenia poruszam się w nim sprawnie, dzięki dobrej znajomości innych języków obiektowych takich jak Java/CPP.
 							</h5>
 							<br>
@@ -184,9 +188,9 @@
 
 			<div id="frontend" class="text-light desktop-flex">
 				<div class="flex-row ms-5 desktop-mt-5 mobile-pt-5">
-					<h1>Programista front-end</h1>
+					<h1 i18n="frontendProgrammer">Programista front-end</h1>
 					
-					<h5>
+					<h5 i18n="frontendProgrammerDesc">
 						Jeżeli chodzi o programowanie front-endowe to dopiero zaczynam swoją przygodę. Jednak wydaje mi się, że radzę sobie dobrze. Co widać po tej stronie i kilku innych moich projektach.
 					</h5>					
 				</div>
@@ -198,8 +202,8 @@
 			<div id="about-me" class="container py-4">
 				<div class="row d-flex justify-content-center">
 					<div id="about-me-desc" class="col-3 mobile-w-100 rounded bg-light mobile-text-center">
-						<h1>O mnie:</h1>
-						<h5>Jestem 19 letnim, pracowitym i nastawionym na rozwój chłopakiem. Moją pasja jest programowanie. Zajmuje się tym od 14 roku życia. Oprócz programowania interesuje się elektroniką, gdzie pierwsze obwody tworzyłem mając 11 lat. Jeżeli chodzi o prace jako programista, to prócz kilku małych zleceń nie miałem w tym doświadczenia.</h5>
+						<h1 i18n="aboutMe">O mnie:</h1>
+						<h5 i18n="aboutMeDesc">Jestem 19 letnim, pracowitym i nastawionym na rozwój chłopakiem. Moją pasja jest programowanie. Zajmuje się tym od 14 roku życia. Oprócz programowania interesuje się elektroniką, gdzie pierwsze obwody tworzyłem mając 11 lat. Jeżeli chodzi o prace jako programista, to prócz kilku małych zleceń nie miałem w tym doświadczenia.</h5>
 					</div>
 					<div class="col-3 mobile-w-100">
 						<img class="rounded desktop-rotate mobile-w-100 mobile-h-100" src="img/me.jpg">
@@ -211,8 +215,8 @@
 
 			<div id="backend" class="text-light desktop-flex">
 				<div class="flex-row ms-5 mt-5 mobile-pt-5">
-					<h1 class="">Programista back-end</h1>
-					<h5 class="">
+					<h1 i18n="backendProgrammer">Programista back-end</h1>
+					<h5 i18n="backendProgrammerDesc">
 						Programowaniem back-endowym zajmuje się już dosyć długi czas. Pierwsze swoje kroki stawiałem pisząc wtyczki do serwerów minecrafta w javie, po jakims czasie stworzyłem własną implementacje silnika serwera, po którego stronie leży cała logika gry. 
 						Również tworzyłem oprogramowanie do odtwarzacza muzyki w C++ zbudowanym na mikrokontrolerze esp32.
 					</h5>
@@ -227,9 +231,9 @@
 		<div id="footer-container" class="container float-start text-start pt-5">
 			<div class="row">
 				<div class="col mobile-text-center mobile-w-100">
-					<p class="text-light fw-bold">NA KONIEC</p>
+					<p class="text-light fw-bold" i18n="theEnd">NA KONIEC</p>
 
-					<p class="text-gray">
+					<p class="text-gray" i18n="theEndDesc">
 						Na ten moment nie uważam siebie za doświadczonego programistę.
 						Jednak myślę, że nasza współpraca może być owocna. Jestem rzetelny 
 						i pracowity, również nie lubię owijania w bawełnę, wiec każdy projekt,
@@ -239,7 +243,7 @@
 				</div>
 
 				<div class="col mobile-w-100 mobile-text-center text-gray">
-					<p class="text-light fw-bold">ŹRÓDŁA</p>
+					<p class="text-light fw-bold" i18n="sources">ŹRÓDŁA</p>
 
 					<a class="text-gray" href="https://codepen.io/jayadul/pen/WKqGaE">Animowane karty</a>
 					<br>
@@ -257,7 +261,7 @@
 					<a class="text-gray" href="https://www.freepik.es/foto-gratis/equipo-programadores-hablando-sobre-algoritmo-que-ejecuta-pantalla-portatil-apuntando-al-codigo-fuente-mientras-sentado-escritorio-desarrolladores-software-que-colaboran-proyecto-grupo-codificacion-datos_22453779.htm#query=algoritmo&position=16&from_view=keyword">Imagen de DCStudio</a> en Freepik
 				</div>
 				<div class="col mobile-mt-3 mobile-w-100 mobile-text-center">
-					<p class="text-light fw-bold">KONTAKT</p>
+					<p class="text-light fw-bold" i18n="contactUpper">KONTAKT</p>
 					<p class="text-gray"><i class="fa-solid fa-envelope"></i> seweryn.skrzypik@gmail.com</p>
 					<p class="text-gray"><i class="fa-brands fa-discord"></i> Seweryn#0593</p>
 					<p class="text-gray"><i class="fa-brands fa-github"></i> Sewer-47</p>
@@ -266,7 +270,7 @@
 		</div>
 
 		<div class="float-end desktop-mt-5 desktop-pe-10 mobile-mt-3 mobile-w-100 mobile-text-center">
-			<p class="text-light fw-bold desktop-ms-5">SOCIAL MEDIA</p>
+			<p class="text-light fw-bold desktop-ms-5" i18n="socialMedia">SOCIAL MEDIA</p>
 			<div class="row pt-3">
 				<div class="col mobile-w-50">
 					<a href="https://www.instagram.com/skrzpk_/">
@@ -290,7 +294,7 @@
 				<div class="col-md-auto">
 					<img src="img/logo.png" class="bg-light rounded opacity-bg">
 					<br><br>
-					<p class="text-gray">Wykonanie: Seweryn Skrzypik</p>
+					<p class="text-gray" i18n="madeBy">Wykonanie: Seweryn Skrzypik</p>
 				</div>
 			</div>
 		</div>
@@ -301,6 +305,12 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://kit.fontawesome.com/026e6e202d.js" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="i18n/MessageMap.js"></script>
+	<script type="text/javascript" src="i18n/MessageManager.js"></script>
+	<script type="text/javascript" src="i18n/MessageLoader.js"></script>
+	<script type="text/javascript" src="i18n/MessageProcessor.js"></script>
+
 	<script type="text/javascript" src="BackToTopButton.js"></script>
 </body>
 </html>

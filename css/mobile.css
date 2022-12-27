@@ -1,4 +1,4 @@
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 420px) {
 
 	html, body {
 		overflow-x: hidden;
@@ -68,4 +68,61 @@
 		width: 380px;
 		height: 372px;
 	}	
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+	html, body {
+		overflow-x: hidden;
+	}
+
+	body {
+		position: relative;
+	}	
+
+	footer {
+		background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/footer-bg.jpg);
+	}
+
+	#frontend img, #backend img {
+		width: 26rem;
+		height: 24rem;
+		left: 25%;
+	}
+	
+	.col {
+		flex:0 0 auto;
+	}	
+
+	.mobile-w-100 {
+		width: 100%;
+	}
+
+	.mobile-w-50 {
+		width: 50%;
+	}	
+
+	.mobile-w-auto {
+		width: auto;
+	}	
+
+	.mobile-pt-840px {
+		padding-top: 750px;
+	}
+		
+	.mobile-mt-3 {
+		margin-top: 1rem;
+	}
+
+	.mobile-me-4 {
+		margin-right: 1.5rem;
+	}
+
+	.mobile-mb-4 {
+		margin-bottom: 1.5rem;
+	}	
+
+	.mobile-text-center {
+		text-align: center;
+	}		
 }
