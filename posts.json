@@ -1,0 +1,28 @@
+[
+  {
+    "info": {
+      "title": "example",
+      "description": "example",
+      "image": "example",
+      "release": "example"
+    },  
+    "content": {
+      "header": "example",
+      "description": "opis",
+      "context": ["jakis tekst", "tez jakis tekst"]
+    }
+  },
+  {
+    "info": {
+      "title": "example",
+      "description": "example",
+      "image": "example",
+      "release": "example"
+    },  
+    "content": {
+      "header": "example",
+      "description": "opis",
+      "context": ["jakis tekst", "tez jakis tekst"]
+    }
+  }
+]
